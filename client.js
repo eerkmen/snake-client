@@ -13,6 +13,10 @@ const connect = function () {
     console.log('Successfully connected to game server!');
     conn.write(`Name: EFE`);
   });
-  
+  conn.on('data', (data) => {
+    console.log(data);
+  });
   return conn;
 };
+
+module.exports = { connect };
