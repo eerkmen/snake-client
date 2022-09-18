@@ -9,3 +9,5 @@ const keys = {
   D: 'Move: right',
 };
 
+const IP = 'localhost';
+const PORT = 50541;
