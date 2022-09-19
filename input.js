@@ -10,3 +10,8 @@ const setupInput = function(conn) {
   stdin.on("data", handleUserInput);
   return stdin;
 };
+const handleUserInput = function(key) {
+
+};
+  
+
