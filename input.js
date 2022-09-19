@@ -11,7 +11,11 @@ const setupInput = function(conn) {
   return stdin;
 };
 const handleUserInput = function(key) {
-
+  if (key === '\u0003') {
+    process.exit();
+  }
+  if (key in keys) {
+    connection.write(keys[key]);
+  }
 };
   
-
