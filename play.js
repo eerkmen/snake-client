@@ -3,7 +3,6 @@ const { setupInput } = require('./input');
 
 
 
-
-
 console.log("Connecting ...");
-connect();
+const onjCon = connect();
+setupInput(objCon);
